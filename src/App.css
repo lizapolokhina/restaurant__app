@@ -59,3 +59,61 @@
   border: 0.5px solid #044553;
   border-radius: 30%;
 }
+
+.cart {
+  font-family: 'Seaweed Script', cursive;
+  margin: 50px;
+}
+
+.cart__item {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Playfair Display', serif;
+  border-bottom: solid #b4d2d3 0.5px;
+}
+
+.cart__list {
+  list-style: none;
+  gap: 40px;
+}
+
+.cart__buttons {
+  display: flex;
+}
+
+.cart__buttonsMinus {
+  background-color: #470000;
+  opacity: 0.8;
+  color: white;
+  border: solid transparent 0.5px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.cart__buttonsPlus{
+  background-color: #4b4f00;
+  opacity: 0.8;
+  color: white;
+  border: solid transparent 0.5px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.cart__buttonsRemove {
+  background-color: #152636;
+  opacity: 0.8;
+  color: white;
+  border: solid transparent 0.5px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.cart__emptyButton {
+  background-color: #b4d2d3;
+  border: solid transparent 0.5px;
+  font-family: 'Seaweed Script', cursive;
+  font-size: large;
+  padding: 20px;
+  border-radius: 35%;
+  margin: 50px;
+}
