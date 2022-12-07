@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { CartProvider } from 'react-use-cart';
 import './App.css';
 import { Cart } from './components/Cart/Cart';
@@ -8,13 +8,23 @@ import { Home } from './components/Home/Home';
 
 
 export function App() {
+  const [menuList, setMenuList] = useState(true);
 
   return (
     <>
-    <CartProvider>
+    <div className="App">
+      <button
+      className='menuButton'
+      onClick={() => setMenuList(!menuList)}
+      >
+        menu
+      </button>
+      { menuList && 
+      <CartProvider>
       <Home />
       <Cart />
-    </CartProvider>
+    </CartProvider> }
+    </div>
     </>
   );
 }
